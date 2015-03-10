@@ -11,7 +11,7 @@ module OmniAuth
       option :client_options, {
         :site => 'https://restusa.fitbug.com',
         :request_token_path => '/v1/oauth/request_token',
-        :access_token_path => '/oauth/access_token',
+        :access_token_path => '/v1/oauth/access_token',
         :authorize_path => '/v1/oauth/login'
       }
 
