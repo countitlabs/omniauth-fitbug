@@ -8,7 +8,9 @@ module OmniAuth
       option :name, 'fitbug'
 
       option :client_options, {
-        :site => 'https://restusa.fitbug.com'
+        :site => 'https://restusa.fitbug.com',
+        :authorize_url => '/v1/oauth/login',
+        :token_url => '/v1/oauth/request_token'
       }
 
       uid { '0' }
